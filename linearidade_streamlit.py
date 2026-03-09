@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Aplicativo Streamlit para Análise de Linearidade na Validação Analítica
+Aplicativo Streamlit para Análise de Linearidade - Validação Analítica - Conforme RDC 166
 """
 
 import matplotlib.pyplot as plt
