@@ -22,6 +22,8 @@ st.set_page_config(page_title="Linearidade - Validação Analítica", layout="wi
 pd.options.display.float_format = '{:.4f}'.format
 
 # Constantes
+import pandas as pd
+pd.options.display.float_format = '{:.6f}'.format
 DADOS_EXEMPLO = [
     [0.157043,4660341,1,14], [0.160399,4754809,1,12], [0.160879,4681500,1,2],
     [0.176673,5384404,2,7], [0.180449,5428730,2,4], [0.180989,5263780,2,15],
@@ -29,8 +31,6 @@ DADOS_EXEMPLO = [
     [0.215934,6555505,4,8], [0.220549,6607388,4,6], [0.221209,6294577,4,3],
     [0.235564,7109287,5,9], [0.240599,7181692,5,5], [0.241318,7095422,5,13],
 ]
-import pandas as pd
-pd.options.display.float_format = '{:.6f}'.format
 
 COLUNAS_DF = ['Concentração mg/mL', 'Área', 'Nível', 'Ordem de Coleta']
 NIVEIS_FIXOS = [1,1,1,2,2,2,3,3,3,4,4,4,5,5,5]
