@@ -415,6 +415,11 @@ interpretar_correlacao(correlation_coefficient)
 st.header("4 - Análise Gráfica")
 
 st.subheader("4.1 - Diagrama de Dispersão")
+st.write("""
+O diagrama de dispersão é um gráfico que permite a visualização de uma possível associação entre variáveis quantitativas
+""")
+
+
 fig_dispersao = criar_grafico_dispersao(df_cabeçalho, model_sm)
 st.pyplot(fig_dispersao)
 
