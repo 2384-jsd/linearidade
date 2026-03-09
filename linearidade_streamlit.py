@@ -29,6 +29,9 @@ DADOS_EXEMPLO = [
     [0.215934,6555505,4,8], [0.220549,6607388,4,6], [0.221209,6294577,4,3],
     [0.235564,7109287,5,9], [0.240599,7181692,5,5], [0.241318,7095422,5,13],
 ]
+import pandas as pd
+pd.options.display.float_format = '{:.6f}'.format
+print("Pandas display options for float format have been set to six decimal places.")
 
 COLUNAS_DF = ['Concentração mg/mL', 'Área', 'Nível', 'Ordem de Coleta']
 NIVEIS_FIXOS = [1,1,1,2,2,2,3,3,3,4,4,4,5,5,5]
