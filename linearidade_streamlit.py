@@ -346,7 +346,7 @@ st.title('Linearidade para Validação Analítica')
 
 st.write('''#### Realizar testes estatísticos da linearidade da Validação Analítica de acordo com a RDC 166.
 
-Este é um requisito para os métodos que foram desenvolvidos e estão sendo utilizados para liberação de resultados.
+Este é um requisito para a validação de métodos.
 ''')
 
 # Entrada de dados
