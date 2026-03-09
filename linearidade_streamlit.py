@@ -33,6 +33,8 @@ import pandas as pd
 pd.options.display.float_format = '{:.6f}'.format
 print("Pandas display options for float format have been set to six decimal places.")
 
+print(dados)
+
 COLUNAS_DF = ['Concentração mg/mL', 'Área', 'Nível', 'Ordem de Coleta']
 NIVEIS_FIXOS = [1,1,1,2,2,2,3,3,3,4,4,4,5,5,5]
 ALPHA = 0.05
