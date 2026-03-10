@@ -424,6 +424,13 @@ fig_dispersao = criar_grafico_dispersao(df_cabeçalho, model_sm)
 st.pyplot(fig_dispersao)
 
 st.subheader("4.2 - Diagnóstico dos Resíduos")
+st.write("""
+I - Gráfico de Resíduos padronizados vs Valores ajustados: é usado para detectar se os resíduos se distribuem aleatoriamente e para detectar a presença de valores extremos (outliers) nos dados. Geralmente, consideram-se os pontos que excedam o limite de 3 desvios padrão.
+II - Gráfico de Resíduos da Normal: é usado para verificar a pressuposição de que os resíduos são distribuídos normalmente. Em caso de normalidade os resiúdos em geral seguem aproximadamente uma linha reta.
+III - Gráfico de Resíduos vs Valores ajustados: é usado para verificar a pressuposição de que os resíduos se distribuem aleatoriamente e que tem variância constante.
+IV - Gráfico de Resíduos vs Ordem de coleta: este gráfico mostra os resíduos na ordem em que foram coletados e é usado para verificar a pressuposição de independência. Em geral, para que se cumpra tal requisito, os dados devem se dispor aleatoriamente em torno da linha central.
+""")
+
 fig_residuos = criar_diagnosticos_residuos(model_sm, df_cabeçalho)
 st.pyplot(fig_residuos)
 
